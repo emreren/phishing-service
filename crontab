@@ -1,1 +1,1 @@
-* * * * * cd /app && /usr/local/bin/poetry run python /app/phishing_service/main.py >> /var/log/cron.log 2>&1
+0 */12 * * * cd /app && /usr/local/bin/poetry run python /app/phishing_service/main.py >> /var/log/cron.log 2>&1

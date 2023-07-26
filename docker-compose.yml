@@ -1,4 +1,4 @@
-version: "3.9"
+version: "3.11"
 services:
   db:
     image: postgres:13
@@ -18,3 +18,12 @@ services:
       - db
     volumes:
       - .:/app
+
+  api-app:
+    build:
+      context: .
+      dockerfile: Dockerfile.api
+    depends_on:
+      - db
+    ports:
+      - "8000:8000"

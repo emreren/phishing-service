@@ -1,22 +1,24 @@
 # Python
-*.pyc
-*.pyo
 __pycache__/
-venv/
-dist/
-build/
-*.egg-info/
-*.egg
+*.py[cod]
+*$py.class
 
 # Poetry
-poetry.lock
+.venv/
+.venv3/
+.poetry/
+.poetry.lock
 
-# Docker
-.docker/
-
-# Log files
-*.log
-
-# IDE
+# IDE / Editör özel dosyaları
 .idea/
 .vscode/
+*.sublime-*
+
+# Diğer
+*.log
+*.db
+*.sqlite
+*.pyc
+__pycache__
+.DS_Store
+.env
